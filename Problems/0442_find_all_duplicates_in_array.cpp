@@ -22,7 +22,7 @@ vector<int> findDuplicates(vector<int>& nums) {
             }
         }
         return res;
-    }
+}
 int main(void){
     vector<int> nums = {4,3,2,7,8,2,3,1};
     vector<int> res = findDuplicates(nums);

@@ -69,3 +69,10 @@ Testing/
 
 
 vscode/
+
+# editor settings
+.vscode/
+
+# compiled programs: in Problems/, keep only the source files
+Problems/*
+!Problems/*.cpp
