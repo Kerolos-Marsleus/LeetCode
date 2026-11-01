@@ -1,12 +1,16 @@
-# Task 04 — Subarrays & Duplicates
+# LeetCode Solutions
 
-ITI Data Structures · Lab 4
+C++ solutions to LeetCode problems — interview preparation alongside the ITI Embedded Systems program.
 
-| # | Task | Solution | Reference |
-|---|------|----------|-----------|
-| 1 | Remove duplicates in an unsorted vector (keep only the values that appear exactly once) | [01_remove_duplicates_unsorted_vector.cc](01_remove_duplicates_unsorted_vector.cc) | [LeetCode 1836 · Remove Duplicates From an Unsorted Linked List](https://leetcode.com/problems/remove-duplicates-from-an-unsorted-linked-list/) — same idea on a linked list (Premium) |
-| 2 | Shortest subarray with sum ≥ K | [209_Minimum_Size_Subarray_Sum.cc](209_Minimum_Size_Subarray_Sum.cc) | [LeetCode 209 · Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |
-| 3 | Number of contiguous subarrays with sum exactly K | [560_Subarray_Sum_Equals_K.cc](560_Subarray_Sum_Equals_K.cc) | [LeetCode 560 · Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) |
-| 4 | Maximum average of a contiguous subarray of length K | [643_Maximum_Average_Subarray_I.cc](643_Maximum_Average_Subarray_I.cc) | [LeetCode 643 · Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) |
+## Problems
 
-**Note on Task 1:** LeetCode has no array version of this exact problem. A related one is GeeksforGeeks [Find first non-repeating element](https://www.geeksforgeeks.org/non-repeating-element/).
+| # | Problem | Difficulty | Topic | Approach | Time | Space | Source | Solution |
+|---|---------|------------|-------|----------|------|-------|--------|----------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | Array, Hash Table | Hash map from value to index; look up `target - x` | O(n) | O(n) | ITI DSA Task 2 | [0001-Two_Sum.cpp](Problems/0001-Two_Sum.cpp) |
+| 442 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | Medium | Array, Hash Table | Mark each seen value by negating `nums[v - 1]` | O(n) | O(1) | Practice | [0442_find_all_duplicates_in_array.cpp](Problems/0442_find_all_duplicates_in_array.cpp) |
+
+## Conventions
+
+- One file per problem in `Problems/`, named by its LeetCode number.
+- Each file contains the `Solution` code plus a `main()` with edge-case tests.
+- Built with `g++ -std=c++17 -Wall -Wextra -g -fsanitize=address`.
